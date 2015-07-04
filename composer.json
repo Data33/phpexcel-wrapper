@@ -1,6 +1,10 @@
 {
     "name": "data33/phpexcel-wrapper",
     "description": "A quick and easy wrapper to make excel exports easier",
+    "type": "library",
+    "keywords": ["phpexcel","excel"],
+    "homepage": "https://github.com/Data33/phpexcel-wrapper",
+    "license": "MIT",
     "require": {
         "php": ">=5.3.0",
         "phpoffice/phpexcel": ">= 1.8.0"
