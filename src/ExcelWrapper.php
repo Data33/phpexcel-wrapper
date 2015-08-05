@@ -67,10 +67,11 @@
             }
 
             foreach($this->rows as $rowOffset => $row){
-                //Update our maxcol so we can set the autosize later
-                $maxCol = max($maxCol, count($row)) - 1;
-                $maxColString = PHPExcel_Cell::stringFromColumnIndex($maxCol);
                 list($rowCells, $style) = $row;
+				
+				//Update our maxcol so we can set the autosize later
+                $maxCol = max($maxCol, count($rowCells)) - 1;
+                $maxColString = PHPExcel_Cell::stringFromColumnIndex($maxCol);
 
                 $offsetRowNum = ($rowNum + $rowOffset);
 
